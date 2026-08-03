@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Nikhil Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#">skills</a></li>
+                    <li><a href="#">projects</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, my name is <span class="purple">Nikhil</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <p class="tagline">
+                    A college student who loves turning ideas into clean, functional web experiences using HTML,
+                    CSS, JavaScript, and C.
+                </p>
+                <div class="btns">
+                    <a href="#" class="btn btn-fill">Hire Me</a>
+                    <a href="resume.pdf" download class="btn btn-outline">Download Resume</a>
+                </div>
+            </div>
+            <div class="rightsection">
+                <div class="img-frame">
+                    <img src="nikku 2.png" alt="nikhil image">
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondsection" id="about">
+            <span class="eyebrow">WHO I AM</span>
+            <h1>About Me</h1>
+            <div class="underline"></div>
+            <div class="about-img">
+                <img src="about me.avif" alt="">
+                <p>
+                    I'm a college student with a growing passion for programming and web development. I'm skilled
+                    in HTML and CSS for building clean, responsive layouts, have a working knowledge of JavaScript
+                    for adding interactivity, and understand C, which has strengthened my grasp of core programming
+                    logic and problem-solving. I enjoy blending creativity with technical thinking to build things
+                    that are both functional and visually appealing, and I'm always looking to learn new tools and
+                    take on projects that push my skills further.
+                    <br><br>
+                    I enjoy the mix of creativity and logic that web development offers — designing something
+                    visually appealing while also making sure it functions smoothly under the hood. Right now, I'm
+                    focused on expanding my skills, taking on small projects, and learning how to build more
+                    dynamic, full-featured applications.
+                    <br><br>
+                    When I'm not coding, I'm usually exploring new tools, tutorials, or tech communities to keep
+                    leveling up.
+                </p>
+            </div>
+            
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['web developer', 'web designer', 'coder'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>

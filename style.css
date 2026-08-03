@@ -1,0 +1,318 @@
+* {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* ---------- NAV ---------- */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            padding: 0 60px;
+            background-color: rgba(18, 18, 62, 0.85);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+        }
+
+        .left {
+            font-family: "Lobster Two", sans-serif;
+            font-size: 1.7rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #aa6be4, #7c8cff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            position: relative;
+            padding-bottom: 4px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background: rgb(170, 107, 228);
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: rgb(170, 107, 228);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        /* ---------- HERO / FIRST SECTION ---------- */
+        .firstsection {
+            position: relative;
+            display: flex;
+            align-items: center;
+            min-height: 620px;
+            padding: 60px 8%;
+            background: linear-gradient(120deg, rgb(10, 10, 40) 0%, rgb(30, 25, 60) 100%);
+            overflow: hidden;
+        }
+
+        .firstsection::before {
+            content: "";
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(170, 107, 228, 0.25) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .leftsection {
+            font-family: "Lobster Two", sans-serif;
+            font-size: 3rem;
+            line-height: 1.25;
+            width: 55% !important;
+        }
+
+        .leftsection .tagline {
+            font-family: "Poppins", sans-serif;
+            font-size: 1.05rem;
+            font-weight: 300;
+            color: rgb(200, 200, 220);
+            margin-top: 18px;
+            max-width: 90%;
+        }
+
+        .leftsection .btns {
+            margin-top: 35px;
+            display: flex;
+            gap: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .btn-fill {
+            background: linear-gradient(90deg, rgb(170, 107, 228), rgb(124, 140, 255));
+            color: white;
+            box-shadow: 0 8px 20px rgba(170, 107, 228, 0.35);
+        }
+
+        .btn-outline {
+            border: 1.5px solid rgba(255, 255, 255, 0.4);
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .btn-fill:hover {
+            box-shadow: 0 12px 28px rgba(170, 107, 228, 0.5);
+        }
+
+        .btn-outline:hover {
+            border-color: rgb(170, 107, 228);
+            color: rgb(170, 107, 228);
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .rightsection {
+            width: 45% !important;
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+        }
+
+        .rightsection .img-frame {
+            position: relative;
+            width: 340px;
+            height: 340px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgb(170, 107, 228), rgb(124, 140, 255));
+            padding: 8px;
+        }
+
+        .rightsection img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid rgb(10, 10, 40);
+            display: block;
+        }
+
+        /* ---------- DIVIDER ---------- */
+        main hr {
+            border: 0;
+            background: linear-gradient(90deg, transparent, #9c97f1, transparent);
+            height: 1.2px;
+            margin: 0 84px;
+        }
+
+        /* ---------- ABOUT SECTION ---------- */
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            padding: 100px 0;
+        }
+
+        .secondsection .eyebrow {
+            color: gray;
+            letter-spacing: 3px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .secondsection h1 {
+            font-family: "Lobster Two", sans-serif;
+            font-size: 2.4rem;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        .secondsection .underline {
+            width: 60px;
+            height: 3px;
+            background: rgb(170, 107, 228);
+            margin-bottom: 40px;
+        }
+
+        .secondsection .about-img {
+            display: flex;
+            align-items: flex-start;
+            gap: 60px;
+            margin-top: 20px;
+        }
+
+        .secondsection .about-img img {
+            width: 30%;
+            height: auto;
+            flex-shrink: 0;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .secondsection .about-img p {
+            flex: 1;
+            line-height: 1.9;
+            font-weight: 300;
+            color: rgb(210, 210, 225);
+            font-size: 1.02rem;
+        }
+
+        .secondsection .about-img p br {
+            content: "";
+            display: block;
+            margin-bottom: 14px;
+        }
+
+        
+
+        .verticle {
+            height: 93px;
+            width: 1px;
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 900px) {
+            nav {
+                padding: 0 20px;
+            }
+
+            nav ul li {
+                margin: 0 10px;
+            }
+
+            .firstsection {
+                flex-direction: column;
+                text-align: center;
+                min-height: auto;
+                padding: 60px 5%;
+                gap: 40px;
+            }
+
+            .firstsection>div {
+                width: 100% !important;
+            }
+
+            .leftsection .tagline {
+                max-width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .leftsection .btns {
+                justify-content: center;
+            }
+
+            .rightsection {
+                justify-content: center;
+            }
+
+            .secondsection .about-img {
+                flex-direction: column;
+            }
+
+            .secondsection .about-img img {
+                width: 60%;
+                margin: 0 auto;
+            }
+        }
